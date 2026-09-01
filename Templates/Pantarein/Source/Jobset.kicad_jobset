@@ -1,0 +1,420 @@
+{
+  "jobs": [
+    {
+      "description": "",
+      "id": "ab1ba2ed-f5c4-4ab4-a497-502cc04ff6dc",
+      "settings": {
+        "black_and_white": true,
+        "create_gerber_job_file": true,
+        "crossout_dnp_footprints_on_fab_layers": false,
+        "description": "",
+        "disable_aperture_macros": false,
+        "drawing_sheet": "",
+        "drill_shape": "none",
+        "hide_dnp_footprints_on_fab_layers": false,
+        "include_netlist_attributes": true,
+        "layers": [
+          "B.Cu",
+          "B.Mask",
+          "B.Paste",
+          "B.SilkS",
+          "B.CrtYd",
+          "B.Fab",
+          "In30.Cu",
+          "In29.Cu",
+          "In28.Cu",
+          "In27.Cu",
+          "In26.Cu",
+          "In25.Cu",
+          "In24.Cu",
+          "In23.Cu",
+          "In22.Cu",
+          "In21.Cu",
+          "In20.Cu",
+          "In19.Cu",
+          "In18.Cu",
+          "In17.Cu",
+          "In16.Cu",
+          "In15.Cu",
+          "In14.Cu",
+          "In13.Cu",
+          "In12.Cu",
+          "In11.Cu",
+          "In10.Cu",
+          "In9.Cu",
+          "In8.Cu",
+          "In7.Cu",
+          "In6.Cu",
+          "In5.Cu",
+          "In4.Cu",
+          "In3.Cu",
+          "In2.Cu",
+          "In1.Cu",
+          "F.Cu",
+          "F.Mask",
+          "F.Paste",
+          "F.SilkS",
+          "F.CrtYd",
+          "F.Fab",
+          "Edge.Cuts"
+        ],
+        "layers_to_include_on_all_layers": [],
+        "mirror": false,
+        "negative": false,
+        "output_filename": "",
+        "plot_drawing_sheet": false,
+        "plot_footprint_values": true,
+        "plot_pad_numbers": false,
+        "plot_ref_des": true,
+        "precision": 5,
+        "sketch_dnp_footprints_on_fab_layers": false,
+        "sketch_pads_on_fab_layers": false,
+        "subtract_solder_mask_from_silk": false,
+        "use_drill_origin": true,
+        "use_protel_file_extension": true,
+        "use_x2_format": true
+      },
+      "type": "pcb_export_gerbers"
+    },
+    {
+      "description": "",
+      "id": "9fc0b214-8b3f-49b1-9722-48673fc2c761",
+      "settings": {
+        "description": "",
+        "drill_origin": "plot",
+        "excellon.combine_pth_npth": true,
+        "excellon.minimal_header": false,
+        "excellon.mirror_y": false,
+        "excellon.oval_drill_route": false,
+        "format": "excellon",
+        "generate_map": false,
+        "gerber_precision": 5,
+        "map_format": "pdf",
+        "output_dir": "",
+        "units": "mm",
+        "zero_format": "decimal"
+      },
+      "type": "pcb_export_drill"
+    },
+    {
+      "description": "",
+      "id": "a1390a88-20f4-4cfd-b82f-01d7250f565f",
+      "settings": {
+        "description": "",
+        "exclude_dnp": true,
+        "exclude_footprints_with_th": false,
+        "format": "csv",
+        "gerber_board_edge": true,
+        "negate_bottom_x": false,
+        "output_filename": "Project-PCB-REV_A-CPL.csv",
+        "side": "both",
+        "single_file": true,
+        "smd_only": false,
+        "units": "mm",
+        "use_drill_place_file_origin": true
+      },
+      "type": "pcb_export_pos"
+    },
+    {
+      "description": "",
+      "id": "dadbf1cb-144d-4ace-a54b-514b1b7256e7",
+      "settings": {
+        "bom_format_preset_name": "CSV",
+        "bom_preset_name": "",
+        "description": "",
+        "exclude_dnp": false,
+        "field_delimiter": ",",
+        "fields_group_by": [
+          "Mfg Part #"
+        ],
+        "fields_labels": [
+          "Reference",
+          "Value",
+          "Datasheet",
+          "Description",
+          "Qty",
+          "#",
+          "Color",
+          "Connector Type",
+          "Current",
+          "Gender",
+          "If",
+          "JLCPCB Part #",
+          "Luminous Flux",
+          "Manufacturer",
+          "Mfg Part #",
+          "Footprint",
+          "Mounting Style",
+          "Nr Pins",
+          "Orientation",
+          "Pdiss",
+          "Pitch",
+          "Sim.Device",
+          "Sim.Params",
+          "Sim.Pins",
+          "Sim.Type",
+          "TC",
+          "TCC",
+          "Tolerance",
+          "Vf",
+          "Voltage",
+          "Wavelength"
+        ],
+        "fields_ordered": [
+          "Reference",
+          "__Value",
+          "__Datasheet",
+          "__Description",
+          "${QUANTITY}",
+          "__${ITEM_NUMBER}",
+          "__Color",
+          "__Connector Type",
+          "__Current",
+          "__Gender",
+          "__If",
+          "__JLCPCB Part #",
+          "__Luminous Flux",
+          "Manufacturer",
+          "Mfg Part #",
+          "Footprint",
+          "Mounting Style",
+          "__Nr Pins",
+          "__Orientation",
+          "__Pdiss",
+          "__Pitch",
+          "__Sim.Device",
+          "__Sim.Params",
+          "__Sim.Pins",
+          "__Sim.Type",
+          "__TC",
+          "__TCC",
+          "__Tolerance",
+          "__Vf",
+          "__Voltage",
+          "__Wavelength"
+        ],
+        "filter_string": "",
+        "include_excluded_from_bom": false,
+        "keep_line_breaks": false,
+        "keep_tabs": false,
+        "output_filename": "Project-PCB-REV_A-BOM.csv",
+        "ref_delimiter": ",",
+        "ref_range_delimiter": "",
+        "sort_asc": true,
+        "sort_field": "Reference",
+        "string_delimiter": "\""
+      },
+      "type": "sch_export_bom"
+    },
+    {
+      "description": "Render Top Side",
+      "id": "317fedbc-bc95-4578-bd7d-e1d0952926ca",
+      "settings": {
+        "bg_style": "transparent",
+        "description": "",
+        "floor": false,
+        "format": "png",
+        "height": 1169,
+        "light_bottom_intensity": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "light_camera_intensity": [
+          0.6,
+          0.6,
+          0.6
+        ],
+        "light_side_elevation": 60,
+        "light_side_intensity": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "light_top_intensity": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "output_filename": "Project_PCB_REV_A_TOP.png",
+        "pan_x": 0.0,
+        "pan_y": 0.0,
+        "pan_z": 0.0,
+        "perspective": false,
+        "pivot_x": 0.0,
+        "pivot_y": 0.0,
+        "pivot_z": 0.0,
+        "quality": "high",
+        "rotation_x": 0.0,
+        "rotation_y": 0.0,
+        "rotation_z": 0.0,
+        "side": "top",
+        "width": 1800,
+        "zoom": 1.0
+      },
+      "type": "pcb_render"
+    },
+    {
+      "description": "Render Bottom Side",
+      "id": "3de41c2a-dc7e-4833-96ab-972721eeccbc",
+      "settings": {
+        "bg_style": "transparent",
+        "description": "",
+        "floor": false,
+        "format": "png",
+        "height": 1169,
+        "light_bottom_intensity": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "light_camera_intensity": [
+          0.6,
+          0.6,
+          0.6
+        ],
+        "light_side_elevation": 60,
+        "light_side_intensity": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "light_top_intensity": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "output_filename": "Project-PCB-REV_A-BOTTOM.png",
+        "pan_x": 0.0,
+        "pan_y": 0.0,
+        "pan_z": 0.0,
+        "perspective": false,
+        "pivot_x": 0.0,
+        "pivot_y": 0.0,
+        "pivot_z": 0.0,
+        "quality": "high",
+        "rotation_x": 0.0,
+        "rotation_y": 0.0,
+        "rotation_z": 0.0,
+        "side": "bottom",
+        "width": 1800,
+        "zoom": 1.0
+      },
+      "type": "pcb_render"
+    },
+    {
+      "description": "",
+      "id": "612c6f4d-6ba3-4d22-a248-2e8a6354d089",
+      "settings": {
+        "board_only": false,
+        "board_outlines_chaining_epsilon": 0.01,
+        "cut_vias_in_body": true,
+        "description": "",
+        "export_board_body": true,
+        "export_components": true,
+        "export_inner_copper": false,
+        "export_pads": true,
+        "export_silkscreen": true,
+        "export_soldermask": true,
+        "export_tracks": true,
+        "export_zones": true,
+        "fill_all_vias": false,
+        "format": "step",
+        "fuse_shapes": false,
+        "include_dnp": false,
+        "include_unspecified": true,
+        "occt_format": 0,
+        "optimize_step": true,
+        "output_filename": "Project-PCB-REV_A.step",
+        "overwrite": true,
+        "subst_models": true,
+        "use_defined_origin": false,
+        "use_drill_origin": false,
+        "use_grid_origin": true,
+        "use_pcb_center_origin": false,
+        "user_origin.x": 0.0,
+        "user_origin.y": 0.0,
+        "vrml_model_dir": "",
+        "vrml_relative_paths": false
+      },
+      "type": "pcb_export_3d"
+    },
+    {
+      "description": "",
+      "id": "3db0a4c6-1b1b-4feb-b1a3-dbbb43bcb1c0",
+      "settings": {
+        "description": "",
+        "dest": "/Users/thimovanelst/Documents/GitHub/KiCAD_V9/Templates/PCB/Export/Project-PCB-REV_A",
+        "output_filename": "",
+        "overwrite": true,
+        "source": "/Users/thimovanelst/Documents/GitHub/KiCAD_V9/Templates/PCB/Source",
+        "zero_copies_error": false
+      },
+      "type": "special_copyfiles"
+    }
+  ],
+  "meta": {
+    "version": 1
+  },
+  "outputs": [
+    {
+      "description": "Fabrication",
+      "id": "a3172c38-335e-43d6-b494-c2d612e1d1e9",
+      "only": [
+        "ab1ba2ed-f5c4-4ab4-a497-502cc04ff6dc",
+        "9fc0b214-8b3f-49b1-9722-48673fc2c761"
+      ],
+      "settings": {
+        "format": "zip",
+        "output_path": "Project-PCB-REV_A.zip"
+      },
+      "type": "archive"
+    },
+    {
+      "description": "Assembly",
+      "id": "ce462e46-96a1-494d-8372-0814519bd0cc",
+      "only": [
+        "a1390a88-20f4-4cfd-b82f-01d7250f565f",
+        "dadbf1cb-144d-4ace-a54b-514b1b7256e7"
+      ],
+      "settings": {
+        "output_path": "Project-PCB-REV_A/Assembly/"
+      },
+      "type": "folder"
+    },
+    {
+      "description": "3D STEP",
+      "id": "0fac3786-a0b1-4447-b927-c43784b8b6c9",
+      "only": [
+        "612c6f4d-6ba3-4d22-a248-2e8a6354d089"
+      ],
+      "settings": {
+        "output_path": "Project-PCB-REV_A/STEP/"
+      },
+      "type": "folder"
+    },
+    {
+      "description": "Source",
+      "id": "8d310b30-92a3-444d-9f61-d97c23cb9e2e",
+      "only": [
+        "3db0a4c6-1b1b-4feb-b1a3-dbbb43bcb1c0"
+      ],
+      "settings": {
+        "output_path": "Project-PCB-REV_A/"
+      },
+      "type": "folder"
+    },
+    {
+      "description": "Documentation",
+      "id": "bad389f4-9fc6-455a-b114-e2150e70ecb0",
+      "only": [
+        "317fedbc-bc95-4578-bd7d-e1d0952926ca",
+        "3de41c2a-dc7e-4833-96ab-972721eeccbc"
+      ],
+      "settings": {
+        "output_path": "Project-PCB-REV_A/Documentation/"
+      },
+      "type": "folder"
+    }
+  ]
+}

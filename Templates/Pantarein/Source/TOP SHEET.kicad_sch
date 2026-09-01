@@ -1,0 +1,17 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "b6c21536-73ce-452a-b19e-0c88ff8b419e")
+	(paper "A4")
+	(title_block
+		(title "PCB Name")
+		(date "2025-04-14")
+		(rev "REV.A")
+		(company "Company")
+		(comment 1 "Name")
+		(comment 2 "Project")
+		(comment 4 "${#} / ${##}")
+	)
+	(lib_symbols)
+)

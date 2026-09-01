@@ -1,0 +1,19 @@
+1) Open KiCAD preferences
+2) Go to Schematic Editor -> Colors -> Open Theme Folder
+3) Copy the JSON file from Assets/KiCAD/Colors to this folder and close KiCAD
+4) Open KiCAD
+5) Open KiCAD preferences
+6) Open Preferences Directory
+7) Close KiCAD
+8) Replace files in this folder with contects off Assets/KiCAD/Settings
+9) Open KiCAD
+10) Preferences tab -> Configure Paths
+11) Change path for KICAD_USER_TEMPLATE_DIR to Assets/KiCAD/Templates
+12) Add a variable called STEP_MODELS with path Assets/KiCAD/3dmodels
+13) Click OK
+14) Preferences tab -> Manage Symbol Libraries
+15) Deselect the build in KiCAD libaries and press the folder icon to add the symbol libraries from Assets/KiCAD/Symbols
+16) Preferences tab -> Manage Footprint Libraries
+17) Deselect the build in KiCAD libaries and press the folder icon to add the Footprint libraries from Assets/KiCAD/Footprints
+18) Preferences tab -> Design Block Libraries
+19) Deselect the build in KiCAD libaries and press the folder icon to add the symbol libraries from Assets/KiCAD/Design Blocks
